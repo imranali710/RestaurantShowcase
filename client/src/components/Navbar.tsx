@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 const navItems = [
-  { name: 'HOME', href: '#home' },
-  { name: 'MENU', href: '#menu' },
-  { name: 'ABOUT', href: '#about' },
-  { name: 'GALLERY', href: '#gallery' },
-  { name: 'CONTACT', href: '#contact' }
+  { name: 'HOME', href: '/' },
+  { name: 'MENU', href: '/menu' },
+  { name: 'ABOUT', href: '/about' },
+  { name: 'GALLERY', href: '/gallery' },
+  { name: 'CONTACT', href: '/contact' }
 ];
 
 const Navbar: React.FC = () => {
@@ -29,6 +29,8 @@ const Navbar: React.FC = () => {
 
   const closeMenu = () => setIsOpen(false);
 
+  const [location] = useLocation();
+
   return (
     <>
       <nav 
@@ -38,26 +40,28 @@ const Navbar: React.FC = () => {
       >
         <div className="container mx-auto px-4 md:px-6 py-4">
           <div className="flex justify-between items-center">
-            <a href="#home" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <span className="font-playfair text-2xl font-bold text-accent">Saveur</span>
-            </a>
+            </Link>
             
             <div className="hidden md:flex items-center space-x-8 font-montserrat text-sm tracking-wide">
               {navItems.map((item) => (
-                <a 
+                <Link 
                   key={item.name}
                   href={item.href} 
-                  className="hover:text-accent transition-colors duration-300"
+                  className={`hover:text-accent transition-colors duration-300 ${
+                    location === item.href ? 'text-accent' : ''
+                  }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-              <a 
-                href="#reservations" 
+              <Link 
+                href="/#reservations" 
                 className="px-5 py-2 border border-accent text-accent hover:bg-accent hover:text-white transition-colors duration-300"
               >
                 RESERVE
-              </a>
+              </Link>
             </div>
             
             <button 
@@ -92,22 +96,22 @@ const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col space-y-6 font-montserrat text-white">
               {navItems.map((item) => (
-                <a 
+                <Link 
                   key={item.name}
                   href={item.href} 
                   className="py-2 border-b border-gray-700 hover:text-accent"
                   onClick={closeMenu}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-              <a 
-                href="#reservations" 
+              <Link 
+                href="/#reservations" 
                 className="mt-4 px-5 py-2 border border-accent text-accent hover:bg-accent hover:text-white text-center"
                 onClick={closeMenu}
               >
                 RESERVE
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="font-playfair text-4xl md:text-6xl lg:text-7xl text-white mb-4 text-shadow"
         >
-          Saveur
+          Imran's Kitchen
         </motion.h1>
         
         <motion.p 

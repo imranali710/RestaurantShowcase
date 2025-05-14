@@ -20,7 +20,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Seared Scallops',
         description: 'Fresh Atlantic scallops with citrus zest, microgreens, and truffle oil',
-        price: '$24',
+        price: '₹24',
         tags: [
           { icon: 'fas fa-leaf', text: 'Gluten-Free' },
           { icon: 'fas fa-fire-alt', text: 'Chef\'s Choice' }
@@ -29,7 +29,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Wild Mushroom Risotto',
         description: 'Arborio rice with seasonal wild mushrooms, aged parmesan, and white truffle',
-        price: '$18',
+        price: '₹18',
         tags: [
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
         ]
@@ -37,7 +37,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Tuna Tartare',
         description: 'Fresh yellowfin tuna with avocado, ginger, sesame, and wonton crisps',
-        price: '$22',
+        price: '₹22',
         tags: [
           { icon: 'fas fa-fish', text: 'Seafood' }
         ]
@@ -45,7 +45,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Burrata & Heirloom Tomatoes',
         description: 'Creamy burrata cheese with garden tomatoes, basil oil, and aged balsamic',
-        price: '$19',
+        price: '₹19',
         tags: [
           { icon: 'fas fa-seedling', text: 'Vegetarian' },
           { icon: 'fas fa-leaf', text: 'Gluten-Free' }
@@ -59,7 +59,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Filet Mignon',
         description: 'Grass-fed beef with truffle mashed potatoes, asparagus, and red wine jus',
-        price: '$42',
+        price: '₹42',
         tags: [
           { icon: 'fas fa-leaf', text: 'Gluten-Free' }
         ]
@@ -67,7 +67,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Pan-Seared Salmon',
         description: 'Scottish salmon with saffron risotto, seasonal vegetables, and lemon beurre blanc',
-        price: '$34',
+        price: '₹34',
         tags: [
           { icon: 'fas fa-fish', text: 'Seafood' }
         ]
@@ -75,7 +75,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Herb-Crusted Rack of Lamb',
         description: 'Local lamb with roasted root vegetables and rosemary-infused demi-glace',
-        price: '$38',
+        price: '₹38',
         tags: [
           { icon: 'fas fa-fire-alt', text: 'Chef\'s Choice' }
         ]
@@ -83,7 +83,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Wild Mushroom Pappardelle',
         description: 'House-made pasta with forest mushrooms, thyme, and truffle cream sauce',
-        price: '$28',
+        price: '₹28',
         tags: [
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
         ]
@@ -96,7 +96,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Chocolate Fondant',
         description: 'Warm chocolate cake with liquid center, served with vanilla bean ice cream',
-        price: '$14',
+        price: '₹14',
         tags: [
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
         ]
@@ -104,7 +104,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Crème Brûlée',
         description: 'Classic vanilla custard with caramelized sugar crust and seasonal berries',
-        price: '$12',
+        price: '₹12',
         tags: [
           { icon: 'fas fa-leaf', text: 'Gluten-Free' },
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
@@ -113,7 +113,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Lemon Tart',
         description: 'Tangy lemon curd in a buttery pastry shell with Italian meringue',
-        price: '$13',
+        price: '₹13',
         tags: [
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
         ]
@@ -121,7 +121,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Seasonal Fruit Pavlova',
         description: 'Crisp meringue with whipped cream and fresh seasonal fruits',
-        price: '$15',
+        price: '₹15',
         tags: [
           { icon: 'fas fa-leaf', text: 'Gluten-Free' },
           { icon: 'fas fa-seedling', text: 'Vegetarian' }
@@ -135,7 +135,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Château Margaux 2015',
         description: 'Bordeaux, France - Notes of blackcurrant, violets, and cedar',
-        price: '$220',
+        price: '₹220',
         tags: [
           { icon: 'fas fa-wine-glass-alt', text: 'Red' }
         ]
@@ -143,7 +143,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Puligny-Montrachet 2018',
         description: 'Burgundy, France - Elegant with notes of citrus, apple, and toast',
-        price: '$180',
+        price: '₹180',
         tags: [
           { icon: 'fas fa-wine-glass', text: 'White' }
         ]
@@ -151,7 +151,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Tignanello 2017',
         description: 'Tuscany, Italy - Bold with cherry, spice, and tobacco notes',
-        price: '$195',
+        price: '₹195',
         tags: [
           { icon: 'fas fa-wine-glass-alt', text: 'Red' }
         ]
@@ -159,7 +159,7 @@ const menuData: MenuCategory[] = [
       {
         title: 'Dom Pérignon 2012',
         description: 'Champagne, France - Complex with brioche and citrus notes',
-        price: '$250',
+        price: '₹250',
         tags: [
           { icon: 'fas fa-glass-cheers', text: 'Sparkling' }
         ]

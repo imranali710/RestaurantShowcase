@@ -5,7 +5,7 @@ const FeaturedDish: React.FC = () => {
   return (
     <section className="py-20 bg-primary text-white relative overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-10">
         <img 
           src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
           alt="Texture background" 
